@@ -59,7 +59,7 @@ Subsequently, we proceeded with the data preparation cleaning process. The follo
 
 3. ***town***
    Comparing the boxplot of the different towns and their corresponding median resale prices. Ang Mo Kio was the lowest and Bukit Timah was the highest. Therefore, the baseline that we compare to is Ang Mo Kio since it has the lowest median resale price. The formula for encoding this categorical ***town*** is:
-  > $$ Town \_ Numeric = {Median \ of \ Town \over Median \ of \ Ang \ Mo \ Kio} $$
+  > $$ Town\_Numeric = {Median \ of \ Town \over Median \ of \ Ang \ Mo \ Kio} $$
 
 4. ***flat_type***
    The boxplot visualisation of ***flat_type*** depicts a positive correlation with their respective resale prices. However, this column contained values in string format. Thus, we modified it such that a value of **1 to 5** represents the corresponding **1 - 5 Room**,  **6 - 7** represents **Executive** and **Multi-Generation** respectively.
