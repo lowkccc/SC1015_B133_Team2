@@ -1,8 +1,8 @@
 # Prediction of HDB Flat Resale Price
 
-School of Computer Science and Engineering
-Nanyang Technological University
-Lab: B133
+School of Computer Science and Engineering \
+Nanyang Technological University \
+Lab: B133 \
 Team: 2
 
 Members:
