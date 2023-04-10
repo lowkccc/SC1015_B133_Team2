@@ -30,6 +30,8 @@ The dataset used for this project can be found [here](https://data.gov.sg/datase
 2. [Exploratory Data Analysis](#2-Exploratory-Data-Analysis)
 3. [Models](#3-Models)
 4. [Insights and Conclusions](#4-Insights-and-Conclusions)
+5. [Contributions](#5-Contributions)
+6. [References](#6-References)
 
 ---
 
@@ -59,7 +61,7 @@ Subsequently, we proceeded with the data preparation cleaning process. The follo
 
 3. ***town***
    Comparing the boxplot of the different towns and their corresponding median resale prices. Ang Mo Kio was the lowest and Bukit Timah was the highest. Therefore, the baseline that we compare to is Ang Mo Kio since it has the lowest median resale price. The formula for encoding this categorical ***town*** is:
-  > $$ Town\_Numeric = {Median \ of \ Town \over Median \ of \ Ang \ Mo \ Kio} $$
+  > $$ Town \_ Numeric = {Median \ of \ Town \over Median \ of \ Ang \ Mo \ Kio} $$
 
 4. ***flat_type***
    The boxplot visualisation of ***flat_type*** depicts a positive correlation with their respective resale prices. However, this column contained values in string format. Thus, we modified it such that a value of **1 to 5** represents the corresponding **1 - 5 Room**,  **6 - 7** represents **Executive** and **Multi-Generation** respectively.
@@ -91,3 +93,38 @@ Subsequently, we proceeded with the data preparation cleaning process. The follo
 
 - Conclusion   
    Throughout this project, we have learnt tremendously, the importance of thinking outside the box, and the time and processing power needed to train a model or generate the optimal model. We hope that such models will be able to help individuals make a more informed decision such that they will be able to buy or sell their flats at a fair price and save the hassle of searching for the best price.
+
+### 5. Contributions
+   There are some overlaps because our initial decision was for everyone to try out different models on their own and compare the metrics of the model at the end.
+
+- Low Kar Choon
+   - Basic data preparation and cleaning of numerical and categorical variables except for the encoding of categorical variables.
+   - Simple visualisations to identify the correlations between the variables and resale price.
+   - Experimented with Linear Regression and Polynomial Regression, and implemented GridSearchCV to obtain the optimal degree for Polynomial Regression.
+   - Improved the code for user input and implemented constraints for user input.
+   - GitHub, README.
+
+- Lim Zhi Yong
+   - Data preparation and cleaning by encoding all categorical variables into their numerical values required to train the different models.
+   - Implemented Linear Regression and Polynomial Regression.
+   - Visualisations for the Linear Regression and Polynomial Regression.
+   - Implemented the initial user input process such that the model can predict using inputs from the user.
+   - Slides and video recording.
+
+- Law Wei Lu
+   - Function to remove outliers based on z-scores.
+   - Implemented Random Forest Regression.
+   - Visualisations for Random Forest Regression.
+
+### 6. References
+- Housing & Development Board. (n.d.). *Resale Statistics.* HDB. http://www.hdb.gov.sg/residential/selling-a-flat/overview/resale-statistics 
+
+- Data.gov.sg. (n.d.). *Resale Flat Prices.* Data.gov.sg. https://data.gov.sg/dataset/resale-flat-prices?resource_id=f1765b54-a209-4718-8d38-a39237f502b3 
+
+- Ng, M. (2022, October 6). *HDB resale prices climb 1.2% in Sept; record 45 million-Dollar flats sold in a Month.* The Straits Times. https://www.straitstimes.com/singapore/housing/hdb-resale-prices-climb-12-in-sept-record-45-million-dollar-flats-sold-in-a-month 
+
+- scikit-learn. (n.d.). *sklearn.model_selection.GRIDSEARCHCV.* https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV
+
+- scikit-learn. (n.d.). *1.1.18. Polynomial regression: extending linear models with basis functions* https://scikit-learn.org/stable/modules/linear_model.html#polynomial-regression-extending-linear-models-with-basis-functions
+
+- scikit-learn. (n.d.). *sklearn.ensemble.RandomForestRegressor.* https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
